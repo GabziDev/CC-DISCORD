@@ -53,11 +53,24 @@ namespace CasseCouilleDiscord {
             Console.ResetColor();
 
             Console.Write("Quel est votre token ? ");
+
             Console.ForegroundColor = ConsoleColor.Green;
             tokenDiscord = Console.ReadLine();
             Console.ResetColor();
-            SaveToken();
-            Console.Clear();
+
+            Console.Write("Voulez-vous enregister le token ? (oui/non) ");
+            string choix = Console.ReadLine().ToLower();
+
+            if (choix == "oui")
+            {
+                SaveToken();
+                Console.Clear();
+            } else if (choix == "non")
+            {
+                Console.Clear();
+                Console.WriteLine("[!] Token non enregister");
+            }
+       
             Menu();
         }
 
