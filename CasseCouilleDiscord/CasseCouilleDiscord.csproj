@@ -52,8 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Messages\Logo.cs" />
+    <Compile Include="Messages\Print.cs" />
+    <Compile Include="Modules\SpamMessage.cs" />
+    <Compile Include="Modules\SpamReact.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Token\ChangeToken.cs" />
+    <Compile Include="Token\TokenManager.cs" />
+    <Compile Include="Token\Validator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
