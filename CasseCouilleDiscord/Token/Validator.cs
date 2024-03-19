@@ -22,7 +22,7 @@ namespace CasseCouilleDiscord.Token
 
                     if (userData["id"] != null)
                     {
-                        Console.WriteLine("Token valide : " + response.StatusCode);
+                        Console.WriteLine($"Token valide");
                         return true;
                     }
                 }
