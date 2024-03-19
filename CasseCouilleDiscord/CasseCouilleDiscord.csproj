@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Messages\Logo.cs" />
     <Compile Include="Messages\Print.cs" />
+    <Compile Include="Modules\MultiAccountSpamMessage.cs" />
     <Compile Include="Modules\SpamMessage.cs" />
     <Compile Include="Modules\SpamReact.cs" />
     <Compile Include="Program.cs" />

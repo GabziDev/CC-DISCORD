@@ -11,7 +11,7 @@ namespace CasseCouilleDiscord.Token
         {
             using (var httpClient = new HttpClient())
             {
-                httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+                httpClient.DefaultRequestHeaders.Add("Authorization", $"{token}");
 
                 var response = await httpClient.GetAsync("https://discord.com/api/v10/users/@me");
 
