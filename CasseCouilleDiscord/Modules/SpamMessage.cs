@@ -107,7 +107,7 @@ namespace CasseCouilleDiscord.Modules
                         Console.WriteLine($"{ex.Message}");
                         Console.ResetColor();
                     }
-                    Thread.Sleep(Convert.ToInt32(delay) / 1000);
+                    Thread.Sleep(Convert.ToInt32(delay));
                 }
             }
 
